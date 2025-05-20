@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Tuffy:ital,wght@0,400;0,700;1,400;1,700&display=swap"); /* Fonts google */
+:root {
+     --negro-oscuro: #454242;
+     --negro-ligero: #545151;
+     --gris-oscuro: #53536b;
+     --fondo-claro:linear-gradient(to right, #dbc0d0, #fcc99b);
+     --fondo-oscuro:linear-gradient(to right, #b89dad, #d3a882);
+}
+.main-header {
+     width: 100%;
+}
+.main-nav {
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+     height: 10dvh;
+     padding: 0 2rem;
+
+     ul {
+          list-style-type: none; /* Quita los puntos*/
+          display: flex; /* Hace que la lista este en Horizontal*/
+          gap: 2rem; /* Espacio entre elementos */
+     }
+
+     a {
+          color: var(--negro-ligero);
+          text-decoration-color: transparent; /*Oculta el subrayado del enlace*/
+          transition: all 0.2s ease-in-out; /* Transición de color en segundos */
+          font-weight: 700;
+          font-style: normal;
+
+          &:hover {
+               color: var(--gris-oscuro);
+               text-decoration-color: var(--gris-oscuro);
+          }
+     }
+}
+
+div {
+     width: 80vw;
+     background: var(--fondo-oscuro);
+     border-radius: 1rem;
+     margin: auto;
+     margin-top: 2vw;
+     box-sizing: border-box;
+     padding: 2vw;
+     font-family: "Tuffy", sans-serif;
+     h1,
+     h2,
+     h3 {
+          color: var(--negro-oscuro);
+     }
+     p,
+     li {
+          color: var(--negro-ligero);
+     }
+     img {
+          width: 75vw;
+     }
+     h3 a {
+          color: #275479;
+     }
+     article {
+          background-color: #fdf6e3;
+          border-radius: 12px;
+          padding: 1rem;
+          margin: 1rem 0;
+          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+     }
+}
+body {
+     background: var(--fondo-claro);
+     margin: 0;
+     padding: 0;
+     font-family: "Tuffy", sans-serif;
+}
+header {
+     background: var(--fondo-oscuro);
+     border-bottom-left-radius: 1rem;
+     border-bottom-right-radius: 1rem;
+     margin: 0;
+     padding: 0;
+}
+table {
+     border-collapse: collapse;
+     width: 90%;
+     margin: 2rem auto;
+     border-radius: 1rem;
+     overflow: hidden;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+     padding: 1rem;
+     text-align: left;
+     background-color: #fdf6e3;
+     border-bottom: 1px solid #ddd;
+     color: var(--negro-ligero);
+}
+
+th {
+     background-color: #f5deb3;
+}
+
+tr:last-child td {
+     border-bottom: none;
+}
+
+footer {
+     text-align: center;
+}
